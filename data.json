@@ -65,13 +65,13 @@
     "MDV": [
       {
         "name": "1.  Dynamic Signals",
-        "u": "none",
+        "u": "amber",
         "r": "none",
         "e": "none"
       },
       {
         "name": "2. Frequency domain analysis",
-        "u": "none",
+        "u": "amber",
         "r": "none",
         "e": "none"
       },
