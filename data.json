@@ -3,7 +3,7 @@
     "CFO": [
       {
         "name": "1. Introduction to finance",
-        "u": "none",
+        "u": "red",
         "r": "none",
         "e": "none"
       },
@@ -56,7 +56,7 @@
         "e": "none"
       },
       {
-        "name": "10.",
+        "name": "10. Options and corporate finance",
         "u": "none",
         "r": "none",
         "e": "none"
