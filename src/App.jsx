@@ -180,6 +180,8 @@ const css = `
   body { font-family: 'DM Sans', system-ui, sans-serif; zoom:1.5 ; color: var(--text-1); background: var(--surface-2); -webkit-font-smoothing: antialiased; }
   .fade-in { animation: fadeIn 0.3s ease; }
   @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+  .dropdown-fade { animation: dropdownFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1); }
+  @keyframes dropdownFadeIn { from { opacity: 0; transform: translateX(-50%) translateY(4px) scale(0.97); } to { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); } }
   @keyframes slideDown { from { opacity: 0; max-height: 0; } to { opacity: 1; max-height: 400px; } }
   .slide-down { animation: slideDown 0.25s ease; overflow: hidden; }
   select, input[type=number] { font-family: 'DM Sans', system-ui, sans-serif; }
@@ -280,7 +282,7 @@ function RagSelect({ value, onChange }) {
         transition: "opacity 0.15s",
       }}>{opt.label}</button>
       {open && (
-        <div ref={dropRef} className="fade-in" style={{
+        <div ref={dropRef} className="dropdown-fade" style={{
           position: "fixed", top: pos.top, left: pos.left, transform: "translateX(-50%)",
           background: "var(--surface)", border: "1px solid var(--border)",
           borderRadius: "var(--radius-sm)", boxShadow: "0 4px 20px rgba(0,0,0,0.12)",
