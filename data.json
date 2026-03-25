@@ -1,1 +1,292 @@
-{}
+{
+  "cl": {
+    "CFO": [
+      {
+        "name": "1.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "2.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "3.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "4.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "5.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "6.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "7.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "8.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      }
+    ],
+    "MDV": [
+      {
+        "name": "1.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "2.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "3.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "4.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "5.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "6.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "7.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "8.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      }
+    ],
+    "MTM": [
+      {
+        "name": "1.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "2.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "3.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "4.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "5.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "6.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "7.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "8.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      }
+    ],
+    "MTX": [
+      {
+        "name": "1.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "2.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "3.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "4.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "5.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "6.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "7.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "8.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      }
+    ],
+    "PEN": [
+      {
+        "name": "1.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "2.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "3.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "4.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "5.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "6.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "7.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "8.",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      }
+    ]
+  },
+  "targets": {
+    "CFO": {
+      "understand": 30,
+      "recall": 14,
+      "exam": 10
+    },
+    "MDV": {
+      "understand": 36,
+      "recall": 11,
+      "exam": 15
+    },
+    "MTM": {
+      "understand": 25,
+      "recall": 12,
+      "exam": 13
+    },
+    "MTX": {
+      "understand": 45,
+      "recall": 10,
+      "exam": 16
+    },
+    "PEN": {
+      "understand": 35,
+      "recall": 12,
+      "exam": 14
+    }
+  },
+  "dailyCap": 7,
+  "calNotes": {},
+  "chNotes": {},
+  "ppData": {},
+  "weakMods": [
+    "MDV",
+    "MTX",
+    "PEN"
+  ],
+  "skipDays": [],
+  "srData": {}
+}
