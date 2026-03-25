@@ -33,13 +33,13 @@
       },
       {
         "name": "6. Portfolio allocation",
-        "u": "red",
-        "r": "red",
+        "u": "none",
+        "r": "none",
         "e": "none"
       },
       {
         "name": "7. The cost of capital",
-        "u": "red",
+        "u": "none",
         "r": "none",
         "e": "none"
       },
