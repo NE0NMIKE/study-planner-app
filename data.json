@@ -231,31 +231,31 @@
     "MTX": [
       {
         "name": "1. Introduction",
-        "u": "none",
+        "u": "amber",
         "r": "none",
         "e": "none"
       },
       {
         "name": "2. Modelling of dynamic systems",
-        "u": "none",
+        "u": "amber",
         "r": "none",
         "e": "none"
       },
       {
         "name": "3. System model in mechatronics",
-        "u": "none",
+        "u": "amber",
         "r": "none",
         "e": "none"
       },
       {
         "name": "4. Complex frequency analysis and root locus ",
-        "u": "none",
+        "u": "amber",
         "r": "none",
         "e": "none"
       },
       {
         "name": "5. Frequency response analysis",
-        "u": "none",
+        "u": "amber",
         "r": "none",
         "e": "none"
       },
