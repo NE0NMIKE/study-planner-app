@@ -26,6 +26,7 @@ const inH = ds => ds >= HOLIDAY.start && ds <= HOLIDAY.end;
 const DS = (y, m, d) => `${y}-${String(m + 1).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
 const PD = s => { const p = s.split("-"); return new Date(+p[0], +p[1] - 1, +p[2]); };
 const TODAY = DS(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+const PLAN_START = "2026-03-23";
 const EXAM_DATES = {}; for (const [m, i] of Object.entries(MODULES)) EXAM_DATES[i.exam] = m;
 
 /* ──────────────────────────────────────────
@@ -47,7 +48,7 @@ function generatePlan(targets, dailyCap, skipDays = new Set()) {
 
   // Build list of study days
   const allDays = [];
-  let d = PD(TODAY); const endD = PD("2026-05-15");
+  let d = PD(PLAN_START); const endD = PD("2026-05-15");
   while (d <= endD) { const ds = DS(d.getFullYear(), d.getMonth(), d.getDate()); if (!inH(ds) && !skipDays.has(ds)) allDays.push(ds); d.setDate(d.getDate() + 1); }
 
   // Sort modules by exam date
@@ -555,9 +556,6 @@ export default function App() {
   const dim=new Date(year,month+1,0).getDate();
   const fdow=(new Date(year,month,1).getDay()+6)%7;
   const dayEntries=selDay?(PLAN[selDay]||[]):[];
-  const srDueCounts = {};
-  for (const [, entry] of Object.entries(srData)) { if (entry.nextReview) srDueCounts[entry.nextReview] = (srDueCounts[entry.nextReview] || 0) + 1; }
-  const reviewsDueToday = Object.values(srData).filter(e => e.nextReview && e.nextReview <= TODAY).length;
 
   // allocated hours
   const allocated = {};
@@ -619,12 +617,6 @@ export default function App() {
             ))}
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            {reviewsDueToday > 0 && (
-              <div style={{ display: "flex", alignItems: "center", gap: 4, fontSize: 11, fontWeight: 600, padding: "4px 9px", borderRadius: 99, background: "#F59E0B20", color: "#92400e", border: "1px solid #F59E0B40" }}>
-                <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#F59E0B", flexShrink: 0 }} />
-                {reviewsDueToday} review{reviewsDueToday > 1 ? "s" : ""} due
-              </div>
-            )}
             <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
               <span style={{ fontSize: 12, color: "var(--text-3)", fontWeight: 500 }}>Progress</span>
               <div style={{ position: "relative", width: 40, height: 40 }}>
@@ -740,7 +732,6 @@ export default function App() {
                       const isEx = EXAM_DATES[ds]===e.subj, mod = MODULES[e.subj];
                       return <div key={idx} style={{ fontSize: 8.5, padding: "1.5px 4px", borderRadius: 3, marginBottom: 1, fontWeight: 600, background: isEx ? mod.color : mod.color+"12", color: isEx ? "#fff" : mod.color, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{isEx ? `${e.subj} EXAM` : `${e.subj} [${PHASE_META[e.phase].short}]`}</div>;
                     })}
-                    {srDueCounts[ds] > 0 && <div style={{ fontSize: 7.5, padding: "1px 4px", borderRadius: 3, background: "#F59E0B22", color: "#92400e", fontWeight: 700, marginBottom: 1 }}>{srDueCounts[ds]} review{srDueCounts[ds] > 1 ? "s" : ""} due</div>}
                     {isSkipped && <div style={{ fontSize: 7.5, padding: "1px 4px", borderRadius: 3, background: "#94A3B820", color: "var(--text-3)", fontWeight: 600, marginBottom: 1 }}>day off</div>}
                   </div>
                 );
@@ -758,22 +749,6 @@ export default function App() {
                   const merged={}; let totalH=0;
                   for (const e of dayEntries) { if(e.subj==="HOLIDAY"){merged.HOLIDAY={hours:0,phases:["holiday"]};continue;} if(!merged[e.subj])merged[e.subj]={hours:0,phases:[]}; merged[e.subj].hours+=e.hours; if(!merged[e.subj].phases.includes(e.phase))merged[e.subj].phases.push(e.phase); if(EXAM_DATES[selDay]!==e.subj)totalH+=e.hours; }
                   return <>{Object.entries(merged).map(([subj,info]) => (<div key={subj} style={{ display:"flex",alignItems:"center",gap:7,marginBottom:5,fontSize:12.5 }}>{subj==="HOLIDAY" ? <span style={{color:"#10B981",fontWeight:500}}>Greece holiday</span> : <><span style={{width:5,height:5,borderRadius:"50%",background:MODULES[subj]?.color,flexShrink:0}} /><span style={{fontWeight:600}}>{subj}</span><span style={{color:"var(--text-3)"}}>{EXAM_DATES[selDay]===subj?"EXAM DAY":`${Math.round(info.hours*10)/10}h`}</span>{info.phases.map(p => <span key={p} style={{fontSize:10,padding:"2px 6px",borderRadius:99,background:PHASE_META[p].color+"15",color:PHASE_META[p].color,fontWeight:600}}>{PHASE_META[p].label}</span>)}</>}</div>))}{totalH>0 && <div style={{marginTop:6,paddingTop:6,borderTop:"1px solid var(--border)",fontWeight:600,fontSize:12.5,marginBottom:10}}>Total: ~{Math.round(totalH*10)/10} hours</div>}</>;
-                })()}
-                {(() => {
-                  const due = Object.entries(srData).filter(([,e]) => e.nextReview === selDay).map(([key]) => { const [mod, idx] = key.split("-"); const ch = cl[mod]?.[+idx]; return ch ? { mod, name: ch.name } : null; }).filter(Boolean);
-                  if (!due.length) return null;
-                  return (
-                    <div style={{ marginBottom: 10, padding: "8px 10px", borderRadius: "var(--radius-xs)", background: "#F59E0B15", border: "1px solid #F59E0B40" }}>
-                      <div style={{ fontSize: 10.5, fontWeight: 600, color: "#92400e", marginBottom: 5 }}>Due for review</div>
-                      {due.map(({ mod, name }) => (
-                        <div key={`${mod}-${name}`} style={{ display: "flex", alignItems: "center", gap: 5, fontSize: 11.5, color: "var(--text-2)", marginBottom: 3 }}>
-                          <span style={{ width: 6, height: 6, borderRadius: "50%", background: MODULES[mod].color }} />
-                          <span style={{ fontWeight: 600 }}>{mod}</span>
-                          <span>{name}</span>
-                        </div>
-                      ))}
-                    </div>
-                  );
                 })()}
                 <div style={{ marginTop: dayEntries.length === 0 ? 0 : 4 }}>
                   <div style={{ fontSize: 11, fontWeight: 600, color: "var(--text-3)", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: 6, display: "flex", alignItems: "center", gap: 5 }}>
@@ -798,7 +773,6 @@ export default function App() {
                       <Fragment key={idx}>
                         <span style={{ fontSize: 11.5, color: "var(--text-2)", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
                           {ch.name}
-                          {srData[`${srMod}-${idx}`]?.lastStudied && <span style={{ fontSize: 9.5, color: "var(--text-3)", marginLeft: 5 }}>Last: {srData[`${srMod}-${idx}`].lastStudied}</span>}
                         </span>
                         {RAG.map(r => (
                           <button key={r.value} onClick={() => setSrLog(prev => prev[idx] === r.value ? (() => { const n={...prev}; delete n[idx]; return n; })() : { ...prev, [idx]: r.value })} style={{ fontSize: 9.5, fontWeight: 600, padding: "2px 7px", borderRadius: 99, border: "none", cursor: "pointer", transition: "opacity 0.1s", background: r.value === "none" ? "var(--rag-none)" : r.bg, color: r.value === "none" ? "var(--rag-none-text)" : r.text, opacity: srLog[idx] === r.value ? 1 : srLog[idx] !== undefined ? 0.3 : 0.8, outline: srLog[idx] === r.value ? "2px solid currentColor" : "none" }}>{r.label}</button>
@@ -806,11 +780,15 @@ export default function App() {
                       </Fragment>
                     ))}
                   </div>
-                  {Object.keys(srLog).length > 0 && (
-                    <button onClick={() => logStudy(selDay)} style={{ fontSize: 11.5, fontWeight: 600, padding: "5px 14px", borderRadius: 99, border: "none", cursor: "pointer", background: "#3B82F6", color: "#fff" }}>
-                      Save {Object.keys(srLog).length} review{Object.keys(srLog).length > 1 ? "s" : ""}
-                    </button>
-                  )}
+                  {(() => {
+                    const SR_PHASE_MAP = { understand: "u", recall: "r", exam: "e" };
+                    const srPhase = SR_PHASE_MAP[dayEntries.find(e => e.subj === srMod)?.phase] || "u";
+                    return Object.keys(srLog).length > 0 ? (
+                      <button onClick={() => { Object.entries(srLog).forEach(([idxStr, quality]) => updateCl(srMod, +idxStr, srPhase, quality)); setSrLog({}); }} style={{ fontSize: 11.5, fontWeight: 600, padding: "5px 14px", borderRadius: 99, border: "none", cursor: "pointer", background: "#3B82F6", color: "#fff" }}>
+                        Save {Object.keys(srLog).length} to checklist
+                      </button>
+                    ) : null;
+                  })()}
                 </div>
               </div>
             )}
