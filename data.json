@@ -64,49 +64,79 @@
     ],
     "MDV": [
       {
-        "name": "1. ",
+        "name": "1.  Dynamic Signals",
+        "u": "amber",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "2. Frequency domain analysis",
+        "u": "amber",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "3. Practical application of time domain and fourier domain processing",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "2.",
+        "name": "4. SDOF vibration",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "3.",
+        "name": "5. MDOF vibration",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "4.",
+        "name": "6. Direct time integration methods",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "5.",
+        "name": "7. Axial & torsional vibration of beams",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "6.",
+        "name": "8. Flexural vibration of beams",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "7.",
+        "name": "9. Plate vibration, disc vibration and FRF",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "8.",
+        "name": "10. Lagrange's method ",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "11. Modal analysis of simple rotor models",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "12. Rotor balancing",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "13. Dynamics and fatigue",
         "u": "none",
         "r": "none",
         "e": "none"
@@ -114,49 +144,85 @@
     ],
     "MTM": [
       {
-        "name": "1.",
+        "name": "1. Manufacturing revision & production planning",
+        "u": "amber",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "2. Metal cutting 1 - Process & tool design",
+        "u": "amber",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "3. Metal cutting 2 - Insert selection",
+        "u": "amber",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "4. Metal cutting 3 - Wear patterns and problems",
+        "u": "amber",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "5. CNC machine technology",
+        "u": "amber",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "6. CNC machine tools - programming and operating",
+        "u": "amber",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "7. Metrology",
+        "u": "amber",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "8. Product handling - Robots and Workholding",
+        "u": "green",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "9. Manufacturing factory planning & control",
+        "u": "amber",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "10. Lead time reduction & cell manufacturing",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "2.",
+        "name": "11. Lean manufacturing - History and muda",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "3.",
+        "name": "12. Total quality management & 6 sigma",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "4.",
+        "name": "13. Process variation",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "5.",
-        "u": "none",
-        "r": "none",
-        "e": "none"
-      },
-      {
-        "name": "6.",
-        "u": "none",
-        "r": "none",
-        "e": "none"
-      },
-      {
-        "name": "7.",
-        "u": "none",
-        "r": "none",
-        "e": "none"
-      },
-      {
-        "name": "8.",
+        "name": "14. Process improvement",
         "u": "none",
         "r": "none",
         "e": "none"
@@ -164,49 +230,61 @@
     ],
     "MTX": [
       {
-        "name": "1.",
+        "name": "1. Introduction",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "2.",
+        "name": "2. Modelling of dynamic systems",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "3.",
+        "name": "3. System model in mechatronics",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "4.",
+        "name": "4. Complex frequency analysis and root locus ",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "5.",
+        "name": "5. Frequency response analysis",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "6.",
+        "name": "6. Compensation",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "7.",
+        "name": "7. Analogue filters",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "8.",
+        "name": "8. Brief review of electric actuators",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "9. Digital filters",
+        "u": "none",
+        "r": "none",
+        "e": "none"
+      },
+      {
+        "name": "10. Outputs stages and power amplifiers",
         "u": "none",
         "r": "none",
         "e": "none"
@@ -214,49 +292,43 @@
     ],
     "PEN": [
       {
-        "name": "1.",
+        "name": "1. Ethics",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "2.",
+        "name": "2. Safety and risk",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "3.",
+        "name": "3. Security engineering",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "4.",
+        "name": "4. Intellectual property",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "5.",
+        "name": "5. Sustainability",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "6.",
+        "name": "6. Project management",
         "u": "none",
         "r": "none",
         "e": "none"
       },
       {
-        "name": "7.",
-        "u": "none",
-        "r": "none",
-        "e": "none"
-      },
-      {
-        "name": "8.",
+        "name": "7. Finance",
         "u": "none",
         "r": "none",
         "e": "none"
