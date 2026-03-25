@@ -187,13 +187,13 @@
       },
       {
         "name": "8. Product handling - Robots and Workholding",
-        "u": "amber",
+        "u": "green",
         "r": "none",
         "e": "none"
       },
       {
         "name": "9. Manufacturing factory planning & control",
-        "u": "none",
+        "u": "amber",
         "r": "none",
         "e": "none"
       },
