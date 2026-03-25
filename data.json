@@ -4,31 +4,31 @@
       {
         "name": "1. Introduction to finance",
         "u": "green",
-        "r": "none",
+        "r": "amber",
         "e": "none"
       },
       {
         "name": "2. Bond markets",
         "u": "green",
-        "r": "none",
+        "r": "amber",
         "e": "none"
       },
       {
         "name": "3. Equity markets",
         "u": "green",
-        "r": "none",
+        "r": "red",
         "e": "none"
       },
       {
         "name": "4. Valuation of a firm",
         "u": "green",
-        "r": "none",
+        "r": "red",
         "e": "none"
       },
       {
         "name": "5. The history of equity markets",
-        "u": "none",
-        "r": "none",
+        "u": "green",
+        "r": "red",
         "e": "none"
       },
       {
