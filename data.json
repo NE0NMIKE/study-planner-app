@@ -3,19 +3,19 @@
     "CFO": [
       {
         "name": "1. Introduction to finance",
-        "u": "red",
+        "u": "green",
         "r": "none",
         "e": "none"
       },
       {
         "name": "2. Bond markets",
-        "u": "none",
+        "u": "green",
         "r": "none",
         "e": "none"
       },
       {
         "name": "3. Equity markets",
-        "u": "none",
+        "u": "green",
         "r": "none",
         "e": "none"
       },
