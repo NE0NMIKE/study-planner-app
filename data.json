@@ -77,25 +77,25 @@
       },
       {
         "name": "3. Practical application of time domain and fourier domain processing",
-        "u": "none",
+        "u": "amber",
         "r": "none",
         "e": "none"
       },
       {
         "name": "4. SDOF vibration",
-        "u": "none",
+        "u": "amber",
         "r": "none",
         "e": "none"
       },
       {
         "name": "5. MDOF vibration",
-        "u": "none",
+        "u": "amber",
         "r": "none",
         "e": "none"
       },
       {
         "name": "6. Direct time integration methods",
-        "u": "none",
+        "u": "red",
         "r": "none",
         "e": "none"
       },
