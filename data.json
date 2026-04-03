@@ -45,13 +45,13 @@
       },
       {
         "name": "8. Capital structure",
-        "u": "green",
+        "u": "none",
         "r": "none",
         "e": "none"
       },
       {
         "name": "9. Introduction to options",
-        "u": "amber",
+        "u": "none",
         "r": "none",
         "e": "none"
       },
@@ -299,8 +299,8 @@
       },
       {
         "name": "2. Safety and risk",
-        "u": "green",
-        "r": "red",
+        "u": "none",
+        "r": "none",
         "e": "none"
       },
       {
