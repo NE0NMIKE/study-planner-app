@@ -16,37 +16,37 @@
       {
         "name": "3. Equity markets",
         "u": "green",
-        "r": "red",
+        "r": "amber",
         "e": "none"
       },
       {
         "name": "4. Valuation of a firm",
         "u": "green",
-        "r": "red",
+        "r": "green",
         "e": "none"
       },
       {
         "name": "5. The history of equity markets",
         "u": "green",
-        "r": "red",
+        "r": "green",
         "e": "none"
       },
       {
         "name": "6. Portfolio allocation",
         "u": "green",
-        "r": "none",
+        "r": "amber",
         "e": "none"
       },
       {
         "name": "7. The cost of capital",
         "u": "green",
-        "r": "none",
+        "r": "amber",
         "e": "none"
       },
       {
         "name": "8. Capital structure",
         "u": "green",
-        "r": "none",
+        "r": "amber",
         "e": "none"
       },
       {
