@@ -306,25 +306,25 @@
       {
         "name": "3. IP & security",
         "u": "amber",
-        "r": "none",
+        "r": "amber",
         "e": "none"
       },
       {
         "name": "4. Sustainability and policy",
-        "u": "none",
-        "r": "none",
+        "u": "green",
+        "r": "amber",
         "e": "none"
       },
       {
         "name": "5. Project management",
-        "u": "none",
-        "r": "none",
+        "u": "green",
+        "r": "amber",
         "e": "none"
       },
       {
         "name": "6. Finance & accounting",
-        "u": "none",
-        "r": "none",
+        "u": "green",
+        "r": "amber",
         "e": "none"
       }
     ]
