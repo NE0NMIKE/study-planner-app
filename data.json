@@ -119,8 +119,8 @@
       },
       {
         "name": "10. Lagrange's method ",
-        "u": "none",
-        "r": "none",
+        "u": "green",
+        "r": "amber",
         "e": "none"
       },
       {
