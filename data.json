@@ -146,67 +146,67 @@
       {
         "name": "1. Manufacturing revision & production planning",
         "u": "amber",
-        "r": "none",
+        "r": "amber",
         "e": "none"
       },
       {
         "name": "2. Metal cutting 1 - Process & tool design",
         "u": "amber",
-        "r": "none",
+        "r": "amber",
         "e": "none"
       },
       {
         "name": "3. Metal cutting 2 - Insert selection",
         "u": "amber",
-        "r": "none",
+        "r": "amber",
         "e": "none"
       },
       {
         "name": "4. Metal cutting 3 - Wear patterns and problems",
         "u": "amber",
-        "r": "none",
+        "r": "amber",
         "e": "none"
       },
       {
         "name": "5. CNC machine technology",
         "u": "amber",
-        "r": "none",
+        "r": "amber",
         "e": "none"
       },
       {
         "name": "6. CNC machine tools - programming and operating",
         "u": "amber",
-        "r": "none",
+        "r": "amber",
         "e": "none"
       },
       {
         "name": "7. Metrology",
         "u": "amber",
-        "r": "none",
+        "r": "amber",
         "e": "none"
       },
       {
         "name": "8. Product handling - Robots and Workholding",
         "u": "green",
-        "r": "none",
+        "r": "amber",
         "e": "none"
       },
       {
         "name": "9. Manufacturing factory planning & control",
         "u": "amber",
-        "r": "none",
+        "r": "amber",
         "e": "none"
       },
       {
         "name": "10. Lead time reduction & cell manufacturing",
         "u": "green",
-        "r": "none",
+        "r": "amber",
         "e": "none"
       },
       {
         "name": "11. Lean manufacturing - History and muda",
         "u": "green",
-        "r": "none",
+        "r": "amber",
         "e": "none"
       },
       {
