@@ -361,7 +361,17 @@
   "chNotes": {
     "PEN-0": "To be exam-ready, you should be able to:\n\n Describe line-drawing and apply it to a novel scenario in under 5 minutes\n List and apply at least 5 of Davis' moral tests\n Define whistleblowing and recite the four tests (Need, Proximity, Capability, Last Resort)\n Name the Public Interest Disclosure Act 1998 and Protect\n List the standard professional duties from engineering codes of conduct\n Describe both the sociological and social contract accounts of professionalism\n Structure a policy briefing using the 2025 framework (problem → stakeholders → agreements/disagreements → recommendation)\n For any ethical scenario, identify competing duties, list 2–3 courses of action with pros/cons, and make a justified recommendation"
   },
-  "ppData": {},
+  "ppData": {
+    "CFO": [
+      {
+        "id": 1776790481049,
+        "date": "2026-04-21",
+        "paper": "Example 1 - 2014/15",
+        "score": 68.5,
+        "notes": ""
+      }
+    ]
+  },
   "weakMods": [
     "MTX",
     "MDV"
