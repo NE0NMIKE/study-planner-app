@@ -119,19 +119,19 @@
       },
       {
         "name": "10. Lagrange's method ",
-        "u": "none",
+        "u": "green",
         "r": "none",
         "e": "none"
       },
       {
         "name": "11. Modal analysis of simple rotor models",
-        "u": "none",
+        "u": "green",
         "r": "none",
         "e": "none"
       },
       {
         "name": "12. Rotor balancing",
-        "u": "none",
+        "u": "green",
         "r": "none",
         "e": "none"
       },
