@@ -5,31 +5,31 @@
         "name": "1. Introduction to finance",
         "u": "green",
         "r": "amber",
-        "e": "none"
+        "e": "green"
       },
       {
         "name": "2. Bond markets",
         "u": "green",
         "r": "amber",
-        "e": "none"
+        "e": "green"
       },
       {
         "name": "3. Equity markets",
         "u": "green",
         "r": "amber",
-        "e": "none"
+        "e": "green"
       },
       {
         "name": "4. Valuation of a firm",
         "u": "green",
         "r": "amber",
-        "e": "none"
+        "e": "red"
       },
       {
         "name": "5. The history of equity markets",
         "u": "green",
         "r": "green",
-        "e": "none"
+        "e": "green"
       },
       {
         "name": "6. Portfolio allocation",
