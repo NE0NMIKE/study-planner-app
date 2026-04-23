@@ -41,25 +41,25 @@
         "name": "7. The cost of capital",
         "u": "green",
         "r": "amber",
-        "e": "none"
+        "e": "red"
       },
       {
         "name": "8. Capital structure",
         "u": "green",
         "r": "amber",
-        "e": "none"
+        "e": "red"
       },
       {
         "name": "9. Introduction to options",
         "u": "green",
         "r": "amber",
-        "e": "none"
+        "e": "green"
       },
       {
         "name": "10. Options and corporate finance",
         "u": "green",
         "r": "green",
-        "e": "none"
+        "e": "green"
       }
     ],
     "MDV": [
